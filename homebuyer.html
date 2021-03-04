@@ -1,0 +1,391 @@
+<span style="display:none">
+
+{% assign comarketer_office_text = 'office' %}
+{% assign comarketer_cell_text = 'cell' %}
+{% assign sender_office_text = 'office' %}
+{% assign sender_cell_text = 'cell' %}
+
+{% if comarketer.phone_office == null or comarketer.phone_office == '' %}
+	{% assign comarketer_office_text = '' %}
+{% endif %}
+
+{% if comarketer.phone_cell == null or comarketer.phone_cell == '' %}
+	{% assign comarketer_cell_text = '' %}
+{% endif %}
+
+{% if sender.phone_office == null or sender.phone_office == '' %}
+	{% assign sender_office_text = '' %}
+{% endif %}
+
+{% if sender.phone_cell == null or sender.phone_cell == '' %}
+	{% assign sender_cell_text = '' %}
+{% endif %}
+
+{% capture organization_state_disclaimers %}{% for disc in sender.disclaimers %}{% assign state_name = disc[1].name %}{{ sender.organization.disclaimers[state_name].content }}{% endfor %}{% endcapture %}
+
+{% capture organization_disclaimer %}{{ sender.organization.disclaimers.BasicCorporateDisclosure.content }}{{ organization_state_disclaimers }}{{ sender.organization.disclaimers.SecondaryDisclosure.content }}{% endcapture %}
+</span>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/736508/6728372/css/fonts.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Expanded Access</title>
+    <style>@media only screen{html{min-height:100%;background:#F6F6F6}}@media only screen and (max-width:500px){.small-float-center{margin:0 auto!important;float:none!important;text-align:center!important}.small-text-center{text-align:center!important}}@media only screen and (max-width:500px){table.body img{width:auto;height:auto}table.body center{min-width:0!important}table.body .container{width:95%!important}table.body .columns{height:auto!important;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;padding-left:60px!important;padding-right:60px!important}th.small-10{display:inline-block!important;width:83.33333%!important}th.small-12{display:inline-block!important;width:100%!important}}@media only screen and (max-width:500px){.small-float-center{margin:0 auto!important;float:none!important;text-align:center!important}.small-text-center{text-align:center!important}}@media only screen and (max-width:600px){table.body img{width:auto;height:auto}table.body center{min-width:0!important}table.body .container{width:95%!important}}@media only screen and (max-width:500px){table.body .columns{height:auto!important;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;padding-left:35px!important;padding-right:35px!important}th.small-10{display:inline-block!important;width:83.33333%!important}th.small-12{display:inline-block!important;width:100%!important}}@media only screen and (max-width:500px){.info{border-left:0!important}}</style>
+  </head>
+  <body style="-moz-box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-webkit-text-size-adjust:100%;Margin:0;box-sizing:border-box;color:#787878;font-family:'Gotham SSm A','Gotham SSm B',Arial,sans-serif;font-size:14px;font-weight:200;line-height:1.3;margin:0;min-width:100%;padding:0;text-align:left;width:100%!important">
+<table class="body" style="margin: 0; background: #F6F6F6; border-collapse: collapse; border-spacing: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; height: 100%; line-height: 1.3; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td class="center" align="center" valign="top" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none!important; line-height: 1.3; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;"><center data-parsed="" style="min-width: 600px; width: 100%;">
+<table class="spacer float-center" style="margin: 0 auto; border-collapse: collapse; border-spacing: 0; float: none; padding: 0; text-align: center; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="60px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 60px; font-weight: 200; hyphens: none!important; line-height: 60px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<section id="header" align="center" class="float-center">
+<table align="center" class="container" style="margin: 0 auto; background: #fff; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: inherit; vertical-align: top; width: 600px;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none!important; line-height: 1.3; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;"><center data-parsed="" style="min-width: 600px; width: 100%;"><img src="https://movement.imgix.net/m3custom/eid-2951B-head.jpg" alt="Expanded Access" align="center" class="float-center" style="-ms-interpolation-mode: bicubic; margin: 0 auto; clear: both; display: block; float: none; max-width: 100%; outline: 0; text-align: center; text-decoration: none; width: auto;" />
+<table class="spacer float-center" style="margin: 0 auto; border-collapse: collapse; border-spacing: 0; float: none; padding: 0; text-align: center; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="60px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 60px; font-weight: 200; hyphens: none!important; line-height: 60px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</center></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section align="center" class="float-center">
+<table align="center" class="container" style="margin: 0 auto; background: #fff; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: inherit; vertical-align: top; width: 600px;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none!important; line-height: 1.3; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;"><center data-parsed="" style="min-width: 600px; width: 100%;">
+<table align="center" class="row float-center" style="margin: 0 auto; border-collapse: collapse; border-spacing: 0; display: table; float: none; padding: 0; position: relative; text-align: center; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th class="small-12 large-12 columns first last" contenteditable="false" style="margin: 0 auto; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; padding-left: 60px; padding-right: 60px; text-align: left; width: 540px;">
+<table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th style="margin: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; text-align: left;">
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"><b>If your homebuyer is being held back by a foreclosure, short sale or deed-in-lieu, Movement Mortgage may be able to qualify them for a home loan through our Expanded Access program.</b></p>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">Expanded Access is an alternative program created specifically for homebuyers with a recent history of certain credit events. Take a look at these highlights.</p>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h3 style="margin: 0; margin-bottom: 0; color: inherit; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 16px; font-weight: 200; hyphens: none; line-height: 1.3; padding: 0; text-align: left; word-wrap: normal;">Expanded Access Program Overview</h3>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="15px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 15px; font-weight: 200; hyphens: none!important; line-height: 15px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<li>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">Allows a 620 FICO minimum*</p>
+</li>
+</ul>
+</ul>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"></p>
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<li>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">Offers 95% maximum loan-to-value**</p>
+</li>
+</ul>
+</ul>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"></p>
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<li>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">Up to $3 million loan amount (min. loan amount $150,000)</p>
+</li>
+</ul>
+</ul>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"></p>
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<li>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">Fixed-rate, adjustable-rate, and interest only</p>
+</li>
+</ul>
+</ul>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"></p>
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<li>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">Qualifying income flexibility</p>
+</li>
+</ul>
+</ul>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"></p>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h3 style="margin: 0; margin-bottom: 0; color: inherit; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 16px; font-weight: 200; hyphens: none; line-height: 1.3; padding: 0; text-align: left; word-wrap: normal;">Expanded Access may help if you have</h3>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="15px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 15px; font-weight: 200; hyphens: none!important; line-height: 15px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<li>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">24 months seasoning on foreclosure, short sale, deed-in-lieu</p>
+</li>
+</ul>
+</ul>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"></p>
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<li>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">24 months seasoning on bankruptcy</p>
+</li>
+</ul>
+</ul>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"></p>
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<li>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">Non-warrantable Condo</p>
+</li>
+</ul>
+</ul>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"></p>
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<ul class="circle-list bullet-gray" style="-webkit-padding-start: 20px; color: #888; font-size: 18px; list-style-type: disc; margin-bottom: 0; margin-top: 0;">
+<li>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">Recent late payments on housing</p>
+</li>
+</ul>
+</ul>
+<p style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;"></p>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h3 style="margin: 0; margin-bottom: 0; color: inherit; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 16px; font-weight: 200; hyphens: none; line-height: 1.3; padding: 0; text-align: left; word-wrap: normal;"><b>Interested?</b> Let&rsquo;s see if I can help your homebuyer secure a home mortgage loan through Movement Mortgage&rsquo;s Expanded Access, today!</h3>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="caption" style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 11px; font-weight: 200; hyphens: none; line-height: 1.6; padding: 0; text-align: left;">* With 85% LTV on a mortgage loan between $150,000 and $1,000,000. Maximum DTI 43%. Qualifying FICO based on primary wage earner.<br /><br /> ** On a mortgage loan between $150,000 and $1,500,000. Minimum FICO 720. Maximum DTI 43%</p>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="60px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 60px; font-weight: 200; hyphens: none!important; line-height: 60px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="expander" style="margin: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0!important; text-align: left; visibility: hidden; width: 0;"></th>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</center></td>
+</tr>
+</tbody>
+</table>
+</section>
+{% include 'move_email_co_contact' %}
+<section id="footer" align="center" class="float-center">
+<table align="center" class="container light-gray-bg" style="margin: 0 auto; background: #fff; background-color: #f6f6f6; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: inherit; vertical-align: top; width: 600px;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none!important; line-height: 1.3; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="35px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 35px; font-weight: 200; hyphens: none!important; line-height: 35px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th class="small-12 large-6 columns first" style="margin: 0 auto; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; padding-left: 0; padding-right: 30px; text-align: left; width: 240px;">
+<table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th style="margin: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; text-align: left;">
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<a href="https://movement.com/" style="margin: 0; color: #d60027; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-weight: 200; hyphens: none; line-height: 1.3; padding: 0; text-align: left; text-decoration: underline;"><img class="mm-logo float-left small-float-center" src="https://movement.imgix.net/m3custom/mm-logo-dark.png" alt="Movement Mortgage" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: 0; text-align: left; text-decoration: none; width: auto;" /></a></th>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="small-12 large-6 columns last" contenteditable="false" style="margin: 0 auto; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; padding-left: 30px; padding-right: 0; text-align: left; width: 240px;">
+<table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th style="margin: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; text-align: left;">
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="movement text-right small-text-center" style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 12px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: right;"><a href="https://movement.com/" style="margin: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 16px; font-weight: 200; hyphens: none; line-height: 1.3; padding: 0; text-align: left; text-decoration: underline;">movement.com</a></p>
+</th>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table align="center" class="container light-gray-bg border-top" style="margin: 0 auto; background: #fff; background-color: #f6f6f6; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: inherit; vertical-align: top; width: 600px;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; hyphens: none!important; line-height: 1.3; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">
+<table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th class="small-12 large-12 columns first last" contenteditable="false" style="margin: 0 auto; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; text-align: left; width: 540px;">
+<table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th style="margin: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; text-align: left;">
+<p class="small-text-center" style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 12px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">{{ sender.disclaimer }} | {{ organization_disclaimer }}</p>
+</th>
+<th class="expander" style="margin: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0!important; padding-bottom: 0; text-align: left; visibility: hidden; width: 0;"></th>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+<table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th class="small-12 large-9 columns first" contenteditable="false" style="margin: 0 auto; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; padding-left: 0; padding-right: 30px; text-align: left; width: 390px;">
+<table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th style="margin: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; text-align: left;">
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="small-text-center" style="margin: 0; margin-bottom: 0; color: #2c2b2b; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 12px; font-weight: 200; hyphens: none; line-height: 1.8; padding: 0; text-align: left;">EID 2951B | The included content was approved as of 12/2018</p>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="15px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 15px; font-weight: 200; hyphens: none!important; line-height: 15px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="pad eho small-12 large-3 columns last" style="margin: 0 auto; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; padding-left: 30px; padding-right: 0; text-align: left; width: 90px;">
+<table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<th style="margin: 0; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 14px; font-weight: 200; line-height: 1.3; padding: 0; padding-bottom: 0; text-align: left;">
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="10px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 10px; font-weight: 200; hyphens: none!important; line-height: 10px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<img class="float-right small-float-center" src="https://movement.imgix.net/m3custom/eho-logo-dark.png" alt="Equal Housing Opportunity" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: right; max-width: 100%; outline: 0; text-align: right; text-decoration: none; width: auto;" />
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="25px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 25px; font-weight: 200; hyphens: none!important; line-height: 25px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top;">
+<td height="35px" style="-moz-hyphens: none!important; -webkit-hyphens: none!important; margin: 0; border-collapse: collapse!important; color: #787878; font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif; font-size: 35px; font-weight: 200; hyphens: none!important; line-height: 35px; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</center></td>
+</tr>
+</tbody>
+</table>
+<!-- prevent Gmail on iOS font size manipulation -->
+<div style="display: none; white-space: nowrap; font: 15px courier; line-height: 0;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+</body>
+</html>
